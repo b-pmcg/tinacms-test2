@@ -13,6 +13,10 @@ import { useMarkdownForm } from 'next-tinacms-markdown';
 import matter from 'gray-matter';
 import Mdx from '../content/mdxtest.mdx';
 
+export const SomeComp = () => {
+  return <div>Hello I'm some text</div>;
+};
+
 export default function Home({ file }) {
   console.log('file', file);
   // const Data = file.data;
@@ -75,7 +79,7 @@ export const getStaticProps = async function ({ preview, previewData }) {
       preview: false,
       file: {
         fileRelativePath: 'content/mdxtest.mdx',
-        data: { markdownBody: content },
+        data: { markdownBody: content, frontMatter: '' },
         // data
         // data: (await import('../content/home.json')).default,
       },
