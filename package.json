@@ -11,14 +11,18 @@
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.5.2",
     "dotenv": "^8.2.0",
+    "gray-matter": "^4.0.2",
     "next": "9.5.1",
     "next-tinacms-github": "^0.27.0",
     "next-tinacms-markdown": "^0.27.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-tinacms-editor": "^0.27.3",
     "react-tinacms-github": "^0.27.1",
+    "react-tinacms-inline": "^0.27.3",
     "styled-components": "^5.1.1",
-    "tinacms": "^0.27.1"
+    "tinacms": "^0.27.1",
+    "to-vfile": "^6.1.0"
   },
   "devDependencies": {
     "hygen-next-tinacms-github": "https://github.com/dwalkr/hygen-next-tinacms-github"

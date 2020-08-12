@@ -1,7 +1,9 @@
 require('dotenv').config();
+const mdxTableOfContents = require('./parsemdx-module');
 
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)$/,
+  // options: { compilers: [mdxTableOfContents] },
 });
 
 module.exports = withMDX({
